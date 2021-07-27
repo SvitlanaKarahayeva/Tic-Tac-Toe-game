@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-body{
+    height: 100vh;
+    padding-top: 3px;
+    background-color: #504949;
+    color: silver;
+}
+
+.title{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 40px;   
+}
+
+/* Turns and resuls display */
+.display{
+    text-align: center;
+    font-size: 25px;
+    margin: 1em;    
+}
+
+/* hiding results during the game for the section class= 'results' */
+.hide{
+    display: none;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.cell{
+    border: 2px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;  
+    /* styling rainbow cell background */
+	background-repeat:repeat-x;
+	background: linear-gradient(to right, 
+	#eb5252, 
+	#f78f2f,
+	#f4c151,
+	#75d850, 
+	#6284FF, 
+	#eb5252
+ 	);
+	animation: rainbow 10s linear infinite;
+	background-size: 200% 100% !important;
+}
+@keyframes rainbow{
+	0% {background-position: 0;}
+	100% {background-position: 800% 0;}
+}
+
+/* Results display letters 'X'  and 'O'*/
+.playerX{
+    color: red;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;   
+}
+.playerO{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;   
+}
+
+/* Reset button */
+.btn-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset{
+    background-color: coral;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 1em;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+   <main class = "main-body">
+
+       <section class = "title">
+           <h1>TIC TAC TOE</h1>
+       </section>
+
+       <!-- Dispay for alternating turns between letters X and O -->
+       <section class="display">
+           Turn for player <span class="display-turns playerX">X</span>
+       </section>
+
+       <!-- Board with cells -->
+       <section class = "container">
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+           <div class="cell"></div>
+       </section>
+
+       <!-- Results section. Starts with class: hide -->
+       <section class="display results hide"></section>
+
+       <!-- Reset Button -->
+       <section class="btn-section">
+           <button id="reset">RESET</button>
+       </section>
+
+   </main>
+<script src="main.js"></script>    
+</body>
+</html>
